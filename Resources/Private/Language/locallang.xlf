@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-01-28UTC00:32:260">
+        <header>
+            <authorName>Victor Willhuber</authorName>
+            <authorEmail>victorwillhuber@gmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="ideas.creation_success">
+                <source>Thanks for the idea! Your idea is being reviwed and would be published shortly</source>
+            </trans-unit>
+            <trans-unit id="ideas.input_image_description">
+                <source>Select or drop an image format file here</source>
+            </trans-unit>
+            <trans-unit id="ideas.input_image_selected_success">
+                <source>File selected</source>
+            </trans-unit>
+            <trans-unit id="ideas.input_image_params">
+                <source>(less than 2MB)</source>
+            </trans-unit>
+            <trans-unit id="ideas.like">
+                <source>Like</source>
+            </trans-unit>
+            <trans-unit id="ideas.form-title">
+                <source>Submit your idea</source>
+            </trans-unit>
+            <trans-unit id="ideas.all">
+                <source>All</source>
+            </trans-unit>
+            <trans-unit id="ideas.status-2">
+                <source>Completed</source>
+            </trans-unit>
+            <trans-unit id="ideas.status-3">
+                <source>in implemantation</source>
+            </trans-unit>
+            <trans-unit id="ideas.status-1">
+                <source>Brought in</source>
+            </trans-unit>
+            <trans-unit id="ideas.submit">
+                <source>Submit</source>
+            </trans-unit>
+            <trans-unit id="ideas.title-placeholder">
+                <source>Title*</source>
+            </trans-unit>
+            <trans-unit id="ideas.description-placeholder">
+                <source>Description*</source>
+            </trans-unit>
+            <trans-unit id="ideas.new-idea-message">
+                <source>Thanks for the idea! Your idea will be checked and published shortly*</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

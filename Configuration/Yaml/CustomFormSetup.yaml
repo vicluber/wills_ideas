@@ -1,0 +1,44 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          999: EXT:wills_ideas/Resources/Private/Forms/
+        allowSaveToExtensionPaths: false
+        allowDeleteFromExtensionPaths: false
+
+      prototypes:
+        ### PROTOTYPE: STANDARD
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                translation:
+                  translationFiles:
+                    # index '10' is reserved for the default translation file.
+                    20: 'EXT:wills_ideas/Resources/Private/Language/locallang_forms_general.xlf'
+                    30: 'EXT:wills_ideas/Resources/Private/Language/locallang_forms_specific.xlf'
+                    40: 'EXT:wills_ideas/Resources/Private/Language/locallang_forms_custom.xlf'
+          finishersDefinition:
+            Confirmation:
+              FormEngine:
+                label: 'formEditor.element.AdvancedPassword.editor.confirmationLabel.predefinedDefaults'
+                elements:
+                  message:
+                    label: 'formEditor.elements.Form.finisher.Confirmation.editor.header.label'
+                    config:
+                      type: 'input'
+
+        ### PROTOTYPE: Templates for idea's form
+        NewIdeaForm:
+          __inheritances:
+            10: 'TYPO3.CMS.Form.prototypes.standard'
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  100: 'EXT:wills_ideas/Resources/Private/Forms/NewIdeaForm/Frontend/Templates/'
+                partialRootPaths:
+                  100: 'EXT:wills_ideas/Resources/Private/Forms/NewIdeaForm/Frontend/Partials/'
+                layoutRootPaths:
+                  100: 'EXT:wills_ideas/Resources/Private/Forms/NewIdeaForm/Frontend/Layouts/'

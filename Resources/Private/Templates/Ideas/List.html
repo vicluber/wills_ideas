@@ -1,0 +1,107 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+		<section id="section-main-upper">
+            <div class="row categories-title">
+                <h1>{contentObjectData.header}</h1>
+                <p>{contentObjectData.subheader}<br /><br /></p>
+                <div class="center-wrapper">
+                    <div class="category-menu">
+                        <ul>
+                            <f:if condition="({currentCategory} == 'all')">
+                                <f:then>
+                                    <li>
+                                        <f:link.action action="list" class="active"><f:translate key="ideas.all" /></f:link.action>
+                                    </li>
+                                </f:then>
+                                <f:else>
+                                    <li>
+                                        <f:link.action action="list"><f:translate key="ideas.all" /></f:link.action>
+                                    </li>
+                                </f:else>
+                            </f:if>
+                            <f:for each="{categories}" as="category">
+                                <f:if condition="({currentCategory} == {category.title})">
+                                    <f:then>
+                                        <li>
+                                            <f:link.action action="list" class="active" arguments="{category: category}">{category.title}</f:link.action>
+                                        </li>
+                                    </f:then>
+                                    <f:else>
+                                        <li>
+                                            <f:link.action action="list" arguments="{category: category}">{category.title}</f:link.action>
+                                        </li>
+                                    </f:else>
+                                </f:if>
+                                
+                            </f:for>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+				<div class="center-wrapper">
+                    <f:flashMessages />
+                    <div class="ideas-list">
+                        <f:widget.paginate objects="{ideas}" as="paginatedIdeas" configuration="{itemsPerPage: 10, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+                        <f:for each="{ideas}" as="idea">
+                            <div class="idea-container">
+                                <div class="grid-item-idea">
+                                    <div class="idea-image">
+                                        <f:if condition="({idea.image})">
+                                            <f:then>
+                                                <f:image style="width: 100%; height: auto;" src="{idea.image.originalResource.publicUrl}" />
+                                            </f:then>
+                                        </f:if>
+                                    </div>
+                                    <div class="status-category-main">
+                                        <div class="status-display-container">
+                                            <span class="status-{idea.status}"></span>
+                                            <span>
+                                                <f:if>
+                                                    <f:else if="{idea.status}==2">
+                                                        <f:translate  key="ideas.status-2" />
+                                                    </f:else>
+                                                    <f:else if="{idea.status}==3">
+                                                        <f:translate  key="ideas.status-3" />
+                                                    </f:else>
+                                                    <f:else>
+                                                        <f:translate  key="ideas.status-1" />
+                                                    </f:else>
+                                                </f:if>
+                                            </span>
+                                        </div>
+                                        <div class="category-display-container">
+                                            <span>{idea.category.title}</span>
+                                        </div>
+                                    </div>
+                                    <h3>{idea.title}</h3>
+                                    <div><p>{idea.description}</p></div>
+                                    <f:if condition="({idea.likedByCurrentUser} == FALSE)">
+                                        <f:then>
+                                            <f:link.action class="btn btn-primary like-button" action="like" arguments="{ideaId: idea}">
+                                                <svg style="vertical-align: middle; display: inline-block;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                </svg>
+                                                {idea.likes} <f:translate key="ideas.like"/>
+                                            </f:link.action>
+                                        </f:then>
+                                        <f:else>
+                                            <span class="btn btn-primary like-button disabled">
+                                                <svg style="vertical-align: middle; display: inline-block;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#22522e" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                </svg>
+                                                {idea.likes} <f:translate key="ideas.like"/>
+                                            </span>
+                                        </f:else>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </f:for>
+                    </div>
+				</div>
+                
+
+                </f:widget.paginate>
+			</div>
+		</section>
+</html>

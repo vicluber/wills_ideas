@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-01-28UTC00:32:260">
+        <header>
+            <authorName>Victor Willhuber</authorName>
+            <authorEmail>victorwillhuber@gmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.sheettitle">
+                <source>WillsIdeas plugin configuration</source>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.category_label">
+                <source>Parent category UID for Ideas</source>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.email_label">
+                <source>Email where the notification of the new Idea should be sent</source>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.category_label">
+                <source>Select the parent category for the ideas</source>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.notification_email">
+                <source>Email where the notification about the new posted idea must go</source>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.view_page_uid_label">
+                <source>Select the page that holds the Ideas Show view</source>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.new_page_uid_label">
+                <source>Select the page that holds the Ideas New view</source>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.list_page_uid_label">
+                <source>Select the page that holds the Ideas List view</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.submitted">
+                <source>Eingereicht</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.progress">
+                <source>Fortschritt</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.finished">
+                <source>Fertig</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.user">
+                <source>User</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.user">
+                <source>User</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.category">
+                <source>Categorie</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="ideas_idea.title">
+                <source>Titel</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2021-01-28UTC00:32:260">
+        <header>
+            <authorName>Victor Willhuber</authorName>
+            <authorEmail>victorwillhuber@gmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+                <target>Default</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+                <target>Normal</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.sheettitle">
+                <source>WillsIdeas plugin configuration</source>
+                <target>WillsIdeas plugin einstellungen</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.category_label">
+                <source>Parent category UID for Ideas</source>
+                <target>Übergeordnete Kategorie-UID für Ideen</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.email_label">
+                <source>Email where the notification of the new Idea should be sent</source>
+                <target>E-Mail, an die Benachrichtigung über die neue Idee gesendet werden soll</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.category_label">
+                <source>Select the parent category for the ideas</source>
+                <target>Wählen Sie die übergeordnete Kategorie für die Ideen aus</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.notification_email">
+                <source>Email where the notification about the new posted idea must go</source>
+                <target>E-Mail, wohin die Benachrichtigung über die neu veröffentlichte Idee gehen muss</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.view_page_uid_label">
+                <source>Select the page that holds the Ideas Show view</source>
+                <target>Wählen Sie die Seite aus, auf der sich die Ansicht "Ideenshow" befindet</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.new_page_uid_label">
+                <source>Select the page that holds the Ideas New view</source>
+                <target>Wählen Sie die Seite aus, auf der sich die Ansicht "Ideen neu" befindet</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_ideas.list_page_uid_label">
+                <source>Select the page that holds the Ideas List view</source>
+                <target>Wählen Sie die Seite aus, auf der sich die Ansicht "Ideen neu" befindet</target>
+            </trans-unit>
+            <trans-unit id="ideas_idea.status">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="ideas_idea.submitted">
+                <source>submitted</source>
+                <target>eingereicht</target>
+            </trans-unit>
+            <trans-unit id="ideas_idea.progress">
+                <source>in implementation</source>
+                <target>in Umsetzung</target>
+            </trans-unit>
+            <trans-unit id="ideas_idea.finished">
+                <source>abgeschlossen</source>
+                <target>completed</target>
+            </trans-unit>
+            <trans-unit id="ideas_idea.user">
+                <source>User</source>
+                <target>Benutzerin</target>
+            </trans-unit>
+            <trans-unit id="ideas_idea.category">
+                <source>Category</source>
+                <target>Kategorie</target>
+            </trans-unit>
+            <trans-unit id="ideas_idea.description">
+                <source>Description</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="ideas_idea.title">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,16 @@
+{
+    "name": "wills/wills-ideas",
+    "type": "typo3-cms-extension",
+    "description": "Adding data records for the ideas platform",
+    "homepage": "https://wills.com.ar/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^10.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wills\\WillsIdeas\\": "Classes/"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2021-01-28UTC00:32:260">
+        <header>
+            <authorName>Victor Willhuber</authorName>
+            <authorEmail>victorwillhuber@gmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+                <target>Default</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+                <target>Normal</target>
+            </trans-unit>
+            <trans-unit id="ideas.creation_success">
+                <source>Thanks for the idea! Your idea is being reviwed and would be published shortly</source>
+                <target>Danke für die Idee! Ihre Idee wird geprüft und in Kürze veröffentlicht</target>
+            </trans-unit>
+            <trans-unit id="ideas.input_image_description">
+                <source>Select or drop an image format file here</source>
+                <target>Bild auswählen oder hier hinziehen und ablegen</target>
+            </trans-unit>
+            <trans-unit id="ideas.input_image_selected_success">
+                <source>File selected</source>
+                <target>Datei ausgewählt</target>
+            </trans-unit>
+            <trans-unit id="ideas.input_image_params">
+                <source>(less than 2MB)</source>
+                <target>(weniger als 2MB)</target>
+            </trans-unit>
+            <trans-unit id="ideas.like">
+                <source>Like</source>
+                <target>Gefällt mir</target>
+            </trans-unit>
+            <trans-unit id="ideas.form-title">
+                <source>Submit your idea</source>
+                <target>Eigene Idee einreichen</target>
+            </trans-unit>
+            <trans-unit id="ideas.all">
+                <source>All</source>
+                <target>Alle</target>
+            </trans-unit>
+            <trans-unit id="ideas.status-2">
+                <source>completed</source>
+                <target>abgeschlossen</target>
+            </trans-unit>
+            <trans-unit id="ideas.status-3">
+                <source>in Umsetzung</source>
+                <target>in implementation</target>
+            </trans-unit>
+            <trans-unit id="ideas.status-1">
+                <source>Brought in</source>
+                <target>eingebracht</target>
+            </trans-unit>
+            <trans-unit id="ideas.submit">
+                <source>Submit</source>
+                <target>Absenden</target>
+            </trans-unit>
+            <trans-unit id="ideas.title-placeholder">
+                <source>Title*</source>
+                <target>Titel*</target>
+            </trans-unit>
+            <trans-unit id="ideas.description-placeholder">
+                <source>Description*</source>
+                <target>Beschreibung*</target>
+            </trans-unit>
+            <trans-unit id="ideas.new-idea-message">
+                <source>Thanks for the idea! Your idea is being reviwed and would be published shortly</source>
+                <target>Danke für die Idee! Ihre Idee wird geprüft und in Kürze veröffentlicht</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

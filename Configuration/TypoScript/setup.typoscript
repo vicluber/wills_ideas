@@ -1,0 +1,9 @@
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    includeJSFooter {
+        mainScript = EXT:wills_ideas/Resources/Public/JavaScript/main.js
+    }
+}

@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+{namespace h=Wills\WillsIdeas\ViewHelpers}
+    <div class="idea-form-main">
+        <div class="idea-form-container">
+            <h2><f:translate key="ideas.form-title" /></h2>
+            <f:form.validationResults>
+              <f:if condition="{validationResults.flattenedErrors}">
+                <ul class="errors">
+                  <f:for each="{validationResults.flattenedErrors}" as="errors" key="propertyPath">
+                    <li>{propertyPath}
+                      <ul>
+                      <f:for each="{errors}" as="error">
+                        <li>{error.code}: {error}</li>
+                      </f:for>
+                      </ul>
+                    </li>
+                  </f:for>
+                </ul>
+              </f:if>
+            </f:form.validationResults>
+            <f:form enctype="multipart/form-data" method="post" action="create" name="idea" object="{idea}">
+                <f:form.textfield placeholder="{f:translate(key: 'ideas.title-placeholder', default: 'Titel*')}" required="true" property="title"></f:form.textfield>
+                <f:form.select property="category" options="{categories}" optionValueField="uid" optionLabelField="title" />
+                <f:form.textarea required="true" property="description" rows="8" cols="46" placeholder="{f:translate(key: 'ideas.description-placeholder', default: 'description')}" ></f:form.textarea>
+                <div class="file-area">
+                    <div class="file-dummy">
+                        <h:form.upload property="image" id="file">
+                            <div id="imagePreview">
+                              <img src="/typo3conf/ext/wills_ideas/Resources/Public/Icons/icon-image-upload.svg" width="65" height="65" />
+                            </div>
+                        </h:form.upload>
+                        <span class="default">
+                            <f:translate key="ideas.input_image_description"/>
+                        </span>
+                        <span class="success">
+                            <f:translate key="ideas.input_image_selected_success"/>
+                        </span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <f:form.submit class="btn btn-primary" value="{f:translate(key: 'ideas.submit', default: 'Absenden')}"></f:form.submit>
+                </div>
+            </f:form>
+        </div>
+    </div>
+</html>
